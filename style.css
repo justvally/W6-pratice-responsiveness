@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px; 
+    max-width: 900px;
+    margin: auto;
+}
+
+
+.box {
+    background-color: #9ec9d9; 
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
